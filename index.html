@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href = "https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"  rel = "stylesheet" >
+    <link rel="stylesheet" href="medias.css">
+    <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Menu Responsivo</h1>
+        <i class="material-icons" id="menubtn" onclick="clickmenu()">menu</i>
+    </header>
+    <menu id="itens">
+        <ul>
+
+            <li><a href="#">Página Inicial</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Ligações</a></li>
+        </ul>
+    </menu>
+    <main>
+       
+        <section>
+            <h1>Testando Media queries</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore assumenda cupiditate sequi recusandae aliquam, quo quod et eveniet labore aperiam, molestiae dolores voluptates consectetur nam, in ratione laboriosam repellat nisi!
+            Magni accusantium a vitae neque praesentium. Distinctio odit debitis quia hic quod fuga corporis a qui enim dolor! Libero hic eaque laboriosam porro itaque, architecto vel inventore eos quis ut.
+            Corporis, consequatur qui fuga, mollitia quaerat aut distinctio sunt sed culpa velit vero, fugit nesciunt inventore doloribus dicta error adipisci! Nisi nam necessitatibus explicabo provident praesentium autem nulla illo perferendis.</p> <br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quod debitis eaque non veniam quos odit eum veritatis, voluptate iusto at, et similique optio temporibus. Aut beatae incidunt a explicabo.
+        Repellendus suscipit asperiores, ad enim ducimus distinctio fuga at a illum, ut beatae id rerum quidem unde deleniti. Doloribus assumenda nisi a fugit veniam. Magnam provident exercitationem assumenda doloremque beatae?
+        Quod, assumenda esse doloribus ad, qui, quae ut officiis minus aspernatur enim incidunt adipisci sunt ea ex veritatis est repellendus illo laboriosam dolorum quam? Dolor impedit inventore enim adipisci delectus.
+        Atque, expedita fugiat voluptatibus beatae error incidunt hic veritatis facilis soluta cum laborum quaerat illum quod consectetur vel quis illo modi quas veniam animi. Corrupti eligendi aspernatur laborum dolorum nam!
+        
+       </p>
+        </section>
+    </main>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        function mudouTamanho(){
+            if(window.innerWidth>=768){
+                itens.style.display='block'
+            }
+            else{
+                itens.style.display='none'
+            }
+        }
+        function clickmenu(){
+            if(itens.style.display=='block'){
+                itens.style.display='none'
+            }
+            else{
+                itens.style.display='block'
+            }
+            
+        }
+    </script>
+</body>
+</html>

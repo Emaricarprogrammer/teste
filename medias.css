@@ -1,0 +1,19 @@
+@media(min-width:768px) {
+    i#menubtn{
+        display: none;
+    }
+    menu{
+        display:block;
+        height: 5vh;
+        background-color: gray;
+
+    
+        
+    }
+    menu ul li{
+        display: inline-block;
+    }
+    main{
+        width: 768px;
+    }
+}
